@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Portofolio" />
+    <title>EPLStandings</title>
+    <link rel="icon" href="icons/icon-512x512.png">
+    <link rel="apple-touch-icon" href="/custom_icon.png">
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#3F1052" />
+    <link rel="preconnect" href="https://crests.football-data.org">
+</head>
+
+<body>
+
+    <!-- Start Navigation -->
+    <nav class="color-nav" role="navigation">
+        <div class="nav-wrapper container">
+            <a href="#" class="brand-logo" id="logo-container"><img src="./icons/logo.svg" class="logo" alt="logo"><span
+                    class="bold">EPL</span>-S</a>
+            <span>
+                <button onclick="history.back()" class="btn-flat white-text sidenav-trigger" data-target="nav-mobile">
+                    <img src="/icons/arrow_back.svg" class="arrow-back" alt="arrow_back">
+                </button>
+            </span>
+            <ul class="topnav right hide-on-med-and-down"></ul>
+            <ul class="sidenav" id="nav-mobile"></ul>
+        </div>
+    </nav>
+
+    <div class="content" style="display: none;">
+        <div class="container" id="body-content"></div>
+    </div>
+    <div class="preloader"></div>
+
+    <!-- Tombol untuk menyimpan ke Indexed DB -->
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red" id="save">
+            <img src="/icons/save.svg" alt="save" class="save">
+            <!--<i class="large material-icons">save</i>-->
+        </a>
+        <a class="btn-floating btn-large red" id="delete">
+            <img src="/icons/delete.svg" alt="delete" class="delete">
+            <!--<i class="large material-icons">delete</i>-->
+        </a>
+    </div>
+
+    <script type="text/javascript" src="https://unpkg.com/snarkdown@1.0.2/dist/snarkdown.umd.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/idb.js"></script>
+    <script src="js/db.js"></script>
+    <script src="js/sw_detail.js"></script>
+
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                document.querySelector(".content").style.display = "block";
+                document.querySelector(".preloader").style.display = "none";
+            }, 1500);
+        };
+    </script>
+</body>
+
+</html>

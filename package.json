@@ -1,0 +1,18 @@
+{
+  "name": "epl-standings",
+  "version": "1.0.0",
+  "description": "Web PWA untuk melihat klasemen Sepakbola Liga Inggris",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Fachrulmustofa20"
+  },
+  "author": "fachrulmustofa100@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "web-push": "^3.4.4"
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "name": "EPL Standings",
+    "short_name": "EPL-Standings",
+    "description": "EPL Standings",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#3f1052",
+    "theme_color": "#3f1052",
+    "gcm_sender_id": "49890083311",
+    "icons": [
+        {
+            "src": "/icons/icon-64x64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-128x128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
