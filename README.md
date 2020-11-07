@@ -3,7 +3,7 @@
 # EPL-Standings
 Simple PWA English Preimer League Standings with API from football-data.org
 
-#### Check this website [EPL-Standings]().
+#### Check this website [EPL-Standings](https://epl-standings.netlify.app/).
 
 ![landing-page](readme.png)
 
